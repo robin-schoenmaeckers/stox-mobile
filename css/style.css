@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+header {
+  height: 50px;
+  width: 100vw;
+  border-bottom: 0.5px solid lightgray;
+  position: fixed;
+  background-color: white;
+}
+
+.clear {
+  clear: both;
+} 
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Styling hamburger menu */
+
+.hamburgermenu {
+  background: white;
+  padding-left: 8px;
+  padding-top: 8px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.stripes {
+  background: black;
+  width: 23px;
+  margin: 7px;
+  transition: .4s;
+  height: 2px;
+}
+
+.active #strip1 {
+  transform: rotate(-45deg) translate(-6.5px, 6.5px);
+  height: 2px;
+}
+
+.active #strip2 {
+  opacity: 0;
+}
+
+.active #strip3 {
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+
+/* logo en winkelmandje */
+
+#logo {
+  height: 58%;
+  margin-top: 12px;
+  margin-left: 5px;
+}
+
+.basket {
+  position: absolute;
+  height: 60%;
+  top: 10px;
+  right: 10px;
+}
+
+/* Style van het navigatie menu */
+
+#topnav {
+  overflow: hidden;
+  background-color: #fff;
+  padding-top: 43px;
+  display: none;
+}
+
+/* slider met foto's */
+
+#slider {
+  display: flex;
+  width: 100vw;
+  overflow-y: hidden;
+  padding: 8px;
+  border-bottom: 0.5px solid lightgray;
+
+}
+
+#slider::-webkit-scrollbar {
+  display: none;
+}
+
+.sliderfotos {
+  width: 40%;
+  height: 23%;
+  margin-right: 12px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* drop down menu */
+
+#accordion{
+  width: 100vw;
+  overflow: hidden;
+}
+
+.ui-accordion-header{
+  font-size: 17px;
+  display: block;
+  border: 0.5px solid lightgray;
+  width: 100vw;
+  cursor: pointer;
+  transition: 0.4s;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding-left: 10vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.ui-accordion-header-active{
+  border: 0.5px solid lightgray;
+  outline: none;
+}
+
+.ui-accordion-content a{
+  text-decoration: none;
+  color: black;
+  padding-left: 10vw;
+}
+
+.wrapper{
+  padding-bottom: 10px;
+}
+
+li{
+  margin: 20px;
+  margin-top: 30px;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.arrow {
+  float: right;
+  padding: 3px;
+  margin-right: 23vw;
+  display: inline-block;
+  margin-top: 5px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  border: solid lightgray;
+  border-width: 0 3px 3px 0;
+  transition: .4s;
+}
+
+.ui-accordion-header-active .arrow{
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  transition: .4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
